@@ -1,0 +1,26 @@
+# Datasets
+datasets/coco/train2017/*.jpg
+datasets/test-images/*.jpg
+*.zip
+
+# Results
+results/**/*.jpg
+results/**/*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# Logs
+logs/*.log
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
