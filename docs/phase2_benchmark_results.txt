@@ -1,0 +1,2103 @@
+======================================
+MPI Image Processing Scaling Benchmark
+======================================
+Date: Thu Nov 20 03:09:57 PM UTC 2025
+Cluster: 5 nodes (srv-hpc-01 to srv-hpc-05)
+Filter: Gaussian Blur (sigma=3.0)
+Single-node baseline: 36.63 img/sec
+
+========================================
+Testing with 500 images
+========================================
+Start time: Thu Nov 20 03:09:57 PM UTC 2025
+
+MPI Image Processor initialized
+  Cluster size: 5 nodes
+  Dataset: /nfs/shared/projects/image/datasets/coco/train2017
+  Output: /nfs/shared/projects/image/results/gaussian_blur_mpi_500
+Found 500 images
+
+Work distribution:
+  Rank 0: 100 images
+  Rank 1: 100 images
+  Rank 2: 100 images
+  Rank 3: 100 images
+  Rank 4: 100 images
+
+Rank 0: Processed 100/100 images
+Rank 3: Processed 100/100 images
+Rank 1: Processed 100/100 images
+Rank 4: Processed 100/100 images
+Rank 2: Processed 100/100 images
+
+============================================================
+MPI PROCESSING SUMMARY
+============================================================
+
+Total images processed: 500 / 500
+Cluster nodes: 5
+
+Per-node statistics:
+  Rank 0: 100 images, 32.09 img/sec
+  Rank 1: 100 images, 32.97 img/sec
+  Rank 2: 100 images, 22.15 img/sec
+  Rank 3: 100 images, 33.26 img/sec
+  Rank 4: 100 images, 25.46 img/sec
+
+Overall performance:
+  Total throughput: 110.76 images/sec
+  Speedup vs single-node: 3.02x
+============================================================
+
+
+End time: Thu Nov 20 03:10:07 PM UTC 2025
+
+========================================
+Testing with 1000 images
+========================================
+Start time: Thu Nov 20 03:10:09 PM UTC 2025
+
+MPI Image Processor initialized
+  Cluster size: 5 nodes
+  Dataset: /nfs/shared/projects/image/datasets/coco/train2017
+  Output: /nfs/shared/projects/image/results/gaussian_blur_mpi_1000
+Found 1000 images
+
+Work distribution:
+  Rank 0: 200 images
+  Rank 1: 200 images
+  Rank 2: 200 images
+  Rank 3: 200 images
+  Rank 4: 200 images
+
+Rank 1: Processed 100/200 images
+Rank 0: Processed 100/200 images
+Rank 2: Processed 100/200 images
+Rank 3: Processed 100/200 images
+Rank 4: Processed 100/200 images
+Rank 1: Processed 200/200 images
+Rank 0: Processed 200/200 images
+Rank 3: Processed 200/200 images
+Rank 2: Processed 200/200 images
+Rank 4: Processed 200/200 images
+
+============================================================
+MPI PROCESSING SUMMARY
+============================================================
+
+Total images processed: 1000 / 1000
+Cluster nodes: 5
+
+Per-node statistics:
+  Rank 0: 200 images, 26.99 img/sec
+  Rank 1: 200 images, 33.55 img/sec
+  Rank 2: 200 images, 21.58 img/sec
+  Rank 3: 200 images, 32.99 img/sec
+  Rank 4: 200 images, 22.20 img/sec
+
+Overall performance:
+  Total throughput: 107.91 images/sec
+  Speedup vs single-node: 2.95x
+============================================================
+
+
+End time: Thu Nov 20 03:10:30 PM UTC 2025
+
+========================================
+Testing with 5000 images
+========================================
+Start time: Thu Nov 20 03:10:32 PM UTC 2025
+
+MPI Image Processor initialized
+  Cluster size: 5 nodes
+  Dataset: /nfs/shared/projects/image/datasets/coco/train2017
+  Output: /nfs/shared/projects/image/results/gaussian_blur_mpi_5000
+Found 5000 images
+
+Work distribution:
+  Rank 0: 1000 images
+  Rank 1: 1000 images
+  Rank 2: 1000 images
+  Rank 3: 1000 images
+  Rank 4: 1000 images
+
+Rank 0: Processed 100/1000 images
+Rank 1: Processed 100/1000 images
+Rank 3: Processed 100/1000 images
+Rank 2: Processed 100/1000 images
+Rank 4: Processed 100/1000 images
+Rank 0: Processed 200/1000 images
+Rank 1: Processed 200/1000 images
+Rank 3: Processed 200/1000 images
+Rank 2: Processed 200/1000 images
+Rank 0: Processed 300/1000 images
+Rank 4: Processed 200/1000 images
+Rank 0: Processed 400/1000 images
+Rank 3: Processed 300/1000 images
+Rank 1: Processed 300/1000 images
+Rank 2: Processed 300/1000 images
+Rank 4: Processed 300/1000 images
+Rank 0: Processed 500/1000 images
+Rank 3: Processed 400/1000 images
+Rank 1: Processed 400/1000 images
+Rank 0: Processed 600/1000 images
+Rank 2: Processed 400/1000 images
+Rank 4: Processed 400/1000 images
+Rank 0: Processed 700/1000 images
+Rank 1: Processed 500/1000 images
+Rank 3: Processed 500/1000 images
+Rank 2: Processed 500/1000 images
+Rank 4: Processed 500/1000 images
+Rank 0: Processed 800/1000 images
+Rank 0: Processed 900/1000 images
+Rank 1: Processed 600/1000 images
+Rank 3: Processed 600/1000 images
+Rank 2: Processed 600/1000 images
+Rank 4: Processed 600/1000 images
+Rank 0: Processed 1000/1000 images
+Rank 1: Processed 700/1000 images
+Rank 3: Processed 700/1000 images
+Rank 2: Processed 700/1000 images
+Rank 4: Processed 700/1000 images
+Rank 1: Processed 800/1000 images
+Rank 3: Processed 800/1000 images
+Rank 2: Processed 800/1000 images
+Rank 4: Processed 800/1000 images
+Rank 1: Processed 900/1000 images
+Rank 3: Processed 900/1000 images
+Rank 2: Processed 900/1000 images
+Rank 4: Processed 900/1000 images
+Rank 1: Processed 1000/1000 images
+Rank 2: Processed 1000/1000 images
+Rank 3: Processed 1000/1000 images
+Rank 4: Processed 1000/1000 images
+
+============================================================
+MPI PROCESSING SUMMARY
+============================================================
+
+Total images processed: 5000 / 5000
+Cluster nodes: 5
+
+Per-node statistics:
+  Rank 0: 1000 images, 22.69 img/sec
+  Rank 1: 1000 images, 25.24 img/sec
+  Rank 2: 1000 images, 24.55 img/sec
+  Rank 3: 1000 images, 24.45 img/sec
+  Rank 4: 1000 images, 23.71 img/sec
+
+Overall performance:
+  Total throughput: 113.46 images/sec
+  Speedup vs single-node: 3.10x
+============================================================
+
+
+End time: Thu Nov 20 03:12:29 PM UTC 2025
+
+========================================
+Testing with 10000 images
+========================================
+Start time: Thu Nov 20 03:12:31 PM UTC 2025
+
+MPI Image Processor initialized
+  Cluster size: 5 nodes
+  Dataset: /nfs/shared/projects/image/datasets/coco/train2017
+  Output: /nfs/shared/projects/image/results/gaussian_blur_mpi_10000
+Found 10000 images
+
+Work distribution:
+  Rank 0: 2000 images
+  Rank 1: 2000 images
+  Rank 2: 2000 images
+  Rank 3: 2000 images
+  Rank 4: 2000 images
+
+Rank 0: Processed 100/2000 images
+Rank 1: Processed 100/2000 images
+Rank 2: Processed 100/2000 images
+Rank 4: Processed 100/2000 images
+Rank 3: Processed 100/2000 images
+Rank 0: Processed 200/2000 images
+Rank 1: Processed 200/2000 images
+Rank 2: Processed 200/2000 images
+Rank 0: Processed 300/2000 images
+Rank 4: Processed 200/2000 images
+Rank 3: Processed 200/2000 images
+Rank 1: Processed 300/2000 images
+Rank 2: Processed 300/2000 images
+Rank 0: Processed 400/2000 images
+Rank 1: Processed 400/2000 images
+Rank 2: Processed 400/2000 images
+Rank 3: Processed 300/2000 images
+Rank 4: Processed 300/2000 images
+Rank 0: Processed 500/2000 images
+Rank 1: Processed 500/2000 images
+Rank 2: Processed 500/2000 images
+Rank 0: Processed 600/2000 images
+Rank 3: Processed 400/2000 images
+Rank 4: Processed 400/2000 images
+Rank 2: Processed 600/2000 images
+Rank 0: Processed 700/2000 images
+Rank 1: Processed 600/2000 images
+Rank 0: Processed 800/2000 images
+Rank 2: Processed 700/2000 images
+Rank 1: Processed 700/2000 images
+Rank 3: Processed 500/2000 images
+Rank 4: Processed 500/2000 images
+Rank 0: Processed 900/2000 images
+Rank 2: Processed 800/2000 images
+Rank 1: Processed 800/2000 images
+Rank 0: Processed 1000/2000 images
+Rank 3: Processed 600/2000 images
+Rank 4: Processed 600/2000 images
+Rank 2: Processed 900/2000 images
+Rank 1: Processed 900/2000 images
+Rank 0: Processed 1100/2000 images
+Rank 2: Processed 1000/2000 images
+Rank 1: Processed 1000/2000 images
+Rank 3: Processed 700/2000 images
+Rank 4: Processed 700/2000 images
+Rank 0: Processed 1200/2000 images
+Rank 1: Processed 1100/2000 images
+Rank 0: Processed 1300/2000 images
+Rank 2: Processed 1100/2000 images
+Rank 3: Processed 800/2000 images
+Rank 4: Processed 800/2000 images
+Rank 1: Processed 1200/2000 images
+Rank 0: Processed 1400/2000 images
+Rank 0: Processed 1500/2000 images
+Rank 2: Processed 1200/2000 images
+Rank 3: Processed 900/2000 images
+Rank 1: Processed 1300/2000 images
+Rank 4: Processed 900/2000 images
+Rank 0: Processed 1600/2000 images
+Rank 1: Processed 1400/2000 images
+Rank 2: Processed 1300/2000 images
+Rank 3: Processed 1000/2000 images
+Rank 0: Processed 1700/2000 images
+Rank 4: Processed 1000/2000 images
+Rank 1: Processed 1500/2000 images
+Rank 0: Processed 1800/2000 images
+Rank 2: Processed 1400/2000 images
+Rank 3: Processed 1100/2000 images
+Rank 4: Processed 1100/2000 images
+Rank 1: Processed 1600/2000 images
+Rank 0: Processed 1900/2000 images
+Rank 0: Processed 2000/2000 images
+Rank 1: Processed 1700/2000 images
+Rank 3: Processed 1200/2000 images
+Rank 2: Processed 1500/2000 images
+Rank 4: Processed 1200/2000 images
+Rank 1: Processed 1800/2000 images
+Rank 3: Processed 1300/2000 images
+Rank 2: Processed 1600/2000 images
+Rank 4: Processed 1300/2000 images
+Rank 1: Processed 1900/2000 images
+Rank 1: Processed 2000/2000 images
+Rank 3: Processed 1400/2000 images
+Rank 2: Processed 1700/2000 images
+Rank 4: Processed 1400/2000 images
+Rank 3: Processed 1500/2000 images
+Rank 2: Processed 1800/2000 images
+Rank 4: Processed 1500/2000 images
+Rank 3: Processed 1600/2000 images
+Rank 2: Processed 1900/2000 images
+Rank 4: Processed 1600/2000 images
+Rank 3: Processed 1700/2000 images
+Rank 2: Processed 2000/2000 images
+Rank 4: Processed 1700/2000 images
+Rank 3: Processed 1800/2000 images
+Rank 4: Processed 1800/2000 images
+Rank 3: Processed 1900/2000 images
+Rank 4: Processed 1900/2000 images
+Rank 3: Processed 2000/2000 images
+Rank 4: Processed 2000/2000 images
+
+============================================================
+MPI PROCESSING SUMMARY
+============================================================
+
+Total images processed: 10000 / 10000
+Cluster nodes: 5
+
+Per-node statistics:
+  Rank 0: 2000 images, 28.53 img/sec
+  Rank 1: 2000 images, 28.76 img/sec
+  Rank 2: 2000 images, 28.68 img/sec
+  Rank 3: 2000 images, 28.46 img/sec
+  Rank 4: 2000 images, 28.52 img/sec
+
+Overall performance:
+  Total throughput: 142.30 images/sec
+  Speedup vs single-node: 3.88x
+============================================================
+
+
+End time: Thu Nov 20 03:15:47 PM UTC 2025
+
+========================================
+Testing with 50000 images
+========================================
+Start time: Thu Nov 20 03:15:49 PM UTC 2025
+
+MPI Image Processor initialized
+  Cluster size: 5 nodes
+  Dataset: /nfs/shared/projects/image/datasets/coco/train2017
+  Output: /nfs/shared/projects/image/results/gaussian_blur_mpi_50000
+Found 50000 images
+
+Work distribution:
+  Rank 0: 10000 images
+  Rank 1: 10000 images
+  Rank 2: 10000 images
+  Rank 3: 10000 images
+  Rank 4: 10000 images
+
+Rank 0: Processed 100/10000 images
+Rank 2: Processed 100/10000 images
+Rank 3: Processed 100/10000 images
+Rank 1: Processed 100/10000 images
+Rank 4: Processed 100/10000 images
+Rank 0: Processed 200/10000 images
+Rank 0: Processed 300/10000 images
+Rank 1: Processed 200/10000 images
+Rank 3: Processed 200/10000 images
+Rank 2: Processed 200/10000 images
+Rank 4: Processed 200/10000 images
+Rank 0: Processed 400/10000 images
+Rank 0: Processed 500/10000 images
+Rank 1: Processed 300/10000 images
+Rank 2: Processed 300/10000 images
+Rank 3: Processed 300/10000 images
+Rank 4: Processed 300/10000 images
+Rank 0: Processed 600/10000 images
+Rank 1: Processed 400/10000 images
+Rank 3: Processed 400/10000 images
+Rank 0: Processed 700/10000 images
+Rank 2: Processed 400/10000 images
+Rank 4: Processed 400/10000 images
+Rank 0: Processed 800/10000 images
+Rank 1: Processed 500/10000 images
+Rank 2: Processed 500/10000 images
+Rank 3: Processed 500/10000 images
+Rank 0: Processed 900/10000 images
+Rank 4: Processed 500/10000 images
+Rank 0: Processed 1000/10000 images
+Rank 1: Processed 600/10000 images
+Rank 2: Processed 600/10000 images
+Rank 3: Processed 600/10000 images
+Rank 4: Processed 600/10000 images
+Rank 0: Processed 1100/10000 images
+Rank 0: Processed 1200/10000 images
+Rank 1: Processed 700/10000 images
+Rank 2: Processed 700/10000 images
+Rank 3: Processed 700/10000 images
+Rank 4: Processed 700/10000 images
+Rank 0: Processed 1300/10000 images
+Rank 0: Processed 1400/10000 images
+Rank 1: Processed 800/10000 images
+Rank 3: Processed 800/10000 images
+Rank 2: Processed 800/10000 images
+Rank 4: Processed 800/10000 images
+Rank 0: Processed 1500/10000 images
+Rank 0: Processed 1600/10000 images
+Rank 1: Processed 900/10000 images
+Rank 3: Processed 900/10000 images
+Rank 2: Processed 900/10000 images
+Rank 4: Processed 900/10000 images
+Rank 0: Processed 1700/10000 images
+Rank 1: Processed 1000/10000 images
+Rank 3: Processed 1000/10000 images
+Rank 0: Processed 1800/10000 images
+Rank 2: Processed 1000/10000 images
+Rank 4: Processed 1000/10000 images
+Rank 0: Processed 1900/10000 images
+Rank 1: Processed 1100/10000 images
+Rank 3: Processed 1100/10000 images
+Rank 2: Processed 1100/10000 images
+Rank 0: Processed 2000/10000 images
+Rank 4: Processed 1100/10000 images
+Rank 0: Processed 2100/10000 images
+Rank 1: Processed 1200/10000 images
+Rank 3: Processed 1200/10000 images
+Rank 2: Processed 1200/10000 images
+Rank 0: Processed 2200/10000 images
+Rank 4: Processed 1200/10000 images
+Rank 0: Processed 2300/10000 images
+Rank 3: Processed 1300/10000 images
+Rank 1: Processed 1300/10000 images
+Rank 2: Processed 1300/10000 images
+Rank 4: Processed 1300/10000 images
+Rank 0: Processed 2400/10000 images
+Rank 0: Processed 2500/10000 images
+Rank 1: Processed 1400/10000 images
+Rank 3: Processed 1400/10000 images
+Rank 2: Processed 1400/10000 images
+Rank 4: Processed 1400/10000 images
+Rank 0: Processed 2600/10000 images
+Rank 3: Processed 1500/10000 images
+Rank 1: Processed 1500/10000 images
+Rank 0: Processed 2700/10000 images
+Rank 2: Processed 1500/10000 images
+Rank 4: Processed 1500/10000 images
+Rank 0: Processed 2800/10000 images
+Rank 3: Processed 1600/10000 images
+Rank 1: Processed 1600/10000 images
+Rank 2: Processed 1600/10000 images
+Rank 4: Processed 1600/10000 images
+Rank 0: Processed 2900/10000 images
+Rank 0: Processed 3000/10000 images
+Rank 3: Processed 1700/10000 images
+Rank 1: Processed 1700/10000 images
+Rank 2: Processed 1700/10000 images
+Rank 4: Processed 1700/10000 images
+Rank 0: Processed 3100/10000 images
+Rank 0: Processed 3200/10000 images
+Rank 3: Processed 1800/10000 images
+Rank 1: Processed 1800/10000 images
+Rank 2: Processed 1800/10000 images
+Rank 4: Processed 1800/10000 images
+Rank 0: Processed 3300/10000 images
+Rank 1: Processed 1900/10000 images
+Rank 3: Processed 1900/10000 images
+Rank 2: Processed 1900/10000 images
+Rank 0: Processed 3400/10000 images
+Rank 4: Processed 1900/10000 images
+Rank 0: Processed 3500/10000 images
+Rank 3: Processed 2000/10000 images
+Rank 1: Processed 2000/10000 images
+Rank 2: Processed 2000/10000 images
+Rank 0: Processed 3600/10000 images
+Rank 4: Processed 2000/10000 images
+Rank 0: Processed 3700/10000 images
+Rank 3: Processed 2100/10000 images
+Rank 1: Processed 2100/10000 images
+Rank 2: Processed 2100/10000 images
+Rank 4: Processed 2100/10000 images
+Rank 0: Processed 3800/10000 images
+Rank 3: Processed 2200/10000 images
+Rank 0: Processed 3900/10000 images
+Rank 1: Processed 2200/10000 images
+Rank 2: Processed 2200/10000 images
+Rank 4: Processed 2200/10000 images
+Rank 0: Processed 4000/10000 images
+Rank 3: Processed 2300/10000 images
+Rank 1: Processed 2300/10000 images
+Rank 2: Processed 2300/10000 images
+Rank 0: Processed 4100/10000 images
+Rank 4: Processed 2300/10000 images
+Rank 0: Processed 4200/10000 images
+Rank 3: Processed 2400/10000 images
+Rank 1: Processed 2400/10000 images
+Rank 2: Processed 2400/10000 images
+Rank 0: Processed 4300/10000 images
+Rank 4: Processed 2400/10000 images
+Rank 0: Processed 4400/10000 images
+Rank 3: Processed 2500/10000 images
+Rank 1: Processed 2500/10000 images
+Rank 2: Processed 2500/10000 images
+Rank 4: Processed 2500/10000 images
+Rank 0: Processed 4500/10000 images
+Rank 3: Processed 2600/10000 images
+Rank 1: Processed 2600/10000 images
+Rank 0: Processed 4600/10000 images
+Rank 2: Processed 2600/10000 images
+Rank 4: Processed 2600/10000 images
+Rank 0: Processed 4700/10000 images
+Rank 3: Processed 2700/10000 images
+Rank 1: Processed 2700/10000 images
+Rank 0: Processed 4800/10000 images
+Rank 2: Processed 2700/10000 images
+Rank 4: Processed 2700/10000 images
+Rank 0: Processed 4900/10000 images
+Rank 1: Processed 2800/10000 images
+Rank 3: Processed 2800/10000 images
+Rank 2: Processed 2800/10000 images
+Rank 0: Processed 5000/10000 images
+Rank 4: Processed 2800/10000 images
+Rank 0: Processed 5100/10000 images
+Rank 1: Processed 2900/10000 images
+Rank 3: Processed 2900/10000 images
+Rank 2: Processed 2900/10000 images
+Rank 4: Processed 2900/10000 images
+Rank 0: Processed 5200/10000 images
+Rank 1: Processed 3000/10000 images
+Rank 3: Processed 3000/10000 images
+Rank 0: Processed 5300/10000 images
+Rank 2: Processed 3000/10000 images
+Rank 4: Processed 3000/10000 images
+Rank 0: Processed 5400/10000 images
+Rank 1: Processed 3100/10000 images
+Rank 3: Processed 3100/10000 images
+Rank 0: Processed 5500/10000 images
+Rank 2: Processed 3100/10000 images
+Rank 4: Processed 3100/10000 images
+Rank 0: Processed 5600/10000 images
+Rank 1: Processed 3200/10000 images
+Rank 3: Processed 3200/10000 images
+Rank 2: Processed 3200/10000 images
+Rank 0: Processed 5700/10000 images
+Rank 4: Processed 3200/10000 images
+Rank 1: Processed 3300/10000 images
+Rank 0: Processed 5800/10000 images
+Rank 3: Processed 3300/10000 images
+Rank 2: Processed 3300/10000 images
+Rank 4: Processed 3300/10000 images
+Rank 0: Processed 5900/10000 images
+Rank 1: Processed 3400/10000 images
+Rank 3: Processed 3400/10000 images
+Rank 0: Processed 6000/10000 images
+Rank 2: Processed 3400/10000 images
+Rank 4: Processed 3400/10000 images
+Rank 0: Processed 6100/10000 images
+Rank 1: Processed 3500/10000 images
+Rank 3: Processed 3500/10000 images
+Rank 2: Processed 3500/10000 images
+Rank 0: Processed 6200/10000 images
+Rank 4: Processed 3500/10000 images
+Rank 0: Processed 6300/10000 images
+Rank 3: Processed 3600/10000 images
+Rank 1: Processed 3600/10000 images
+Rank 2: Processed 3600/10000 images
+Rank 0: Processed 6400/10000 images
+Rank 4: Processed 3600/10000 images
+Rank 1: Processed 3700/10000 images
+Rank 3: Processed 3700/10000 images
+Rank 0: Processed 6500/10000 images
+Rank 2: Processed 3700/10000 images
+Rank 0: Processed 6600/10000 images
+Rank 4: Processed 3700/10000 images
+Rank 1: Processed 3800/10000 images
+Rank 3: Processed 3800/10000 images
+Rank 0: Processed 6700/10000 images
+Rank 2: Processed 3800/10000 images
+Rank 0: Processed 6800/10000 images
+Rank 4: Processed 3800/10000 images
+Rank 3: Processed 3900/10000 images
+Rank 1: Processed 3900/10000 images
+Rank 0: Processed 6900/10000 images
+Rank 2: Processed 3900/10000 images
+Rank 0: Processed 7000/10000 images
+Rank 4: Processed 3900/10000 images
+Rank 3: Processed 4000/10000 images
+Rank 1: Processed 4000/10000 images
+Rank 0: Processed 7100/10000 images
+Rank 2: Processed 4000/10000 images
+Rank 0: Processed 7200/10000 images
+Rank 4: Processed 4000/10000 images
+Rank 3: Processed 4100/10000 images
+Rank 1: Processed 4100/10000 images
+Rank 0: Processed 7300/10000 images
+Rank 2: Processed 4100/10000 images
+Rank 4: Processed 4100/10000 images
+Rank 0: Processed 7400/10000 images
+Rank 3: Processed 4200/10000 images
+Rank 1: Processed 4200/10000 images
+Rank 2: Processed 4200/10000 images
+Rank 0: Processed 7500/10000 images
+Rank 4: Processed 4200/10000 images
+Rank 0: Processed 7600/10000 images
+Rank 3: Processed 4300/10000 images
+Rank 1: Processed 4300/10000 images
+Rank 2: Processed 4300/10000 images
+Rank 0: Processed 7700/10000 images
+Rank 4: Processed 4300/10000 images
+Rank 3: Processed 4400/10000 images
+Rank 1: Processed 4400/10000 images
+Rank 0: Processed 7800/10000 images
+Rank 2: Processed 4400/10000 images
+Rank 0: Processed 7900/10000 images
+Rank 4: Processed 4400/10000 images
+Rank 3: Processed 4500/10000 images
+Rank 1: Processed 4500/10000 images
+Rank 0: Processed 8000/10000 images
+Rank 2: Processed 4500/10000 images
+Rank 0: Processed 8100/10000 images
+Rank 4: Processed 4500/10000 images
+Rank 3: Processed 4600/10000 images
+Rank 1: Processed 4600/10000 images
+Rank 0: Processed 8200/10000 images
+Rank 2: Processed 4600/10000 images
+Rank 0: Processed 8300/10000 images
+Rank 4: Processed 4600/10000 images
+Rank 3: Processed 4700/10000 images
+Rank 1: Processed 4700/10000 images
+Rank 2: Processed 4700/10000 images
+Rank 0: Processed 8400/10000 images
+Rank 4: Processed 4700/10000 images
+Rank 0: Processed 8500/10000 images
+Rank 3: Processed 4800/10000 images
+Rank 1: Processed 4800/10000 images
+Rank 2: Processed 4800/10000 images
+Rank 0: Processed 8600/10000 images
+Rank 4: Processed 4800/10000 images
+Rank 3: Processed 4900/10000 images
+Rank 1: Processed 4900/10000 images
+Rank 0: Processed 8700/10000 images
+Rank 2: Processed 4900/10000 images
+Rank 0: Processed 8800/10000 images
+Rank 4: Processed 4900/10000 images
+Rank 3: Processed 5000/10000 images
+Rank 1: Processed 5000/10000 images
+Rank 0: Processed 8900/10000 images
+Rank 2: Processed 5000/10000 images
+Rank 0: Processed 9000/10000 images
+Rank 4: Processed 5000/10000 images
+Rank 3: Processed 5100/10000 images
+Rank 1: Processed 5100/10000 images
+Rank 2: Processed 5100/10000 images
+Rank 0: Processed 9100/10000 images
+Rank 4: Processed 5100/10000 images
+Rank 3: Processed 5200/10000 images
+Rank 0: Processed 9200/10000 images
+Rank 1: Processed 5200/10000 images
+Rank 2: Processed 5200/10000 images
+Rank 0: Processed 9300/10000 images
+Rank 4: Processed 5200/10000 images
+Rank 3: Processed 5300/10000 images
+Rank 1: Processed 5300/10000 images
+Rank 0: Processed 9400/10000 images
+Rank 2: Processed 5300/10000 images
+Rank 0: Processed 9500/10000 images
+Rank 4: Processed 5300/10000 images
+Rank 3: Processed 5400/10000 images
+Rank 1: Processed 5400/10000 images
+Rank 2: Processed 5400/10000 images
+Rank 0: Processed 9600/10000 images
+Rank 4: Processed 5400/10000 images
+Rank 0: Processed 9700/10000 images
+Rank 1: Processed 5500/10000 images
+Rank 3: Processed 5500/10000 images
+Rank 2: Processed 5500/10000 images
+Rank 0: Processed 9800/10000 images
+Rank 4: Processed 5500/10000 images
+Rank 0: Processed 9900/10000 images
+Rank 3: Processed 5600/10000 images
+Rank 1: Processed 5600/10000 images
+Rank 2: Processed 5600/10000 images
+Rank 0: Processed 10000/10000 images
+Rank 4: Processed 5600/10000 images
+Rank 3: Processed 5700/10000 images
+Rank 1: Processed 5700/10000 images
+Rank 2: Processed 5700/10000 images
+Rank 4: Processed 5700/10000 images
+Rank 1: Processed 5800/10000 images
+Rank 3: Processed 5800/10000 images
+Rank 2: Processed 5800/10000 images
+Rank 4: Processed 5800/10000 images
+Rank 1: Processed 5900/10000 images
+Rank 3: Processed 5900/10000 images
+Rank 2: Processed 5900/10000 images
+Rank 4: Processed 5900/10000 images
+Rank 1: Processed 6000/10000 images
+Rank 3: Processed 6000/10000 images
+Rank 2: Processed 6000/10000 images
+Rank 4: Processed 6000/10000 images
+Rank 1: Processed 6100/10000 images
+Rank 3: Processed 6100/10000 images
+Rank 2: Processed 6100/10000 images
+Rank 4: Processed 6100/10000 images
+Rank 1: Processed 6200/10000 images
+Rank 3: Processed 6200/10000 images
+Rank 2: Processed 6200/10000 images
+Rank 4: Processed 6200/10000 images
+Rank 3: Processed 6300/10000 images
+Rank 1: Processed 6300/10000 images
+Rank 2: Processed 6300/10000 images
+Rank 4: Processed 6300/10000 images
+Rank 3: Processed 6400/10000 images
+Rank 1: Processed 6400/10000 images
+Rank 2: Processed 6400/10000 images
+Rank 4: Processed 6400/10000 images
+Rank 3: Processed 6500/10000 images
+Rank 1: Processed 6500/10000 images
+Rank 2: Processed 6500/10000 images
+Rank 4: Processed 6500/10000 images
+Rank 3: Processed 6600/10000 images
+Rank 1: Processed 6600/10000 images
+Rank 2: Processed 6600/10000 images
+Rank 4: Processed 6600/10000 images
+Rank 3: Processed 6700/10000 images
+Rank 1: Processed 6700/10000 images
+Rank 2: Processed 6700/10000 images
+Rank 4: Processed 6700/10000 images
+Rank 3: Processed 6800/10000 images
+Rank 1: Processed 6800/10000 images
+Rank 2: Processed 6800/10000 images
+Rank 4: Processed 6800/10000 images
+Rank 3: Processed 6900/10000 images
+Rank 1: Processed 6900/10000 images
+Rank 2: Processed 6900/10000 images
+Rank 4: Processed 6900/10000 images
+Rank 1: Processed 7000/10000 images
+Rank 3: Processed 7000/10000 images
+Rank 2: Processed 7000/10000 images
+Rank 4: Processed 7000/10000 images
+Rank 3: Processed 7100/10000 images
+Rank 1: Processed 7100/10000 images
+Rank 2: Processed 7100/10000 images
+Rank 4: Processed 7100/10000 images
+Rank 3: Processed 7200/10000 images
+Rank 1: Processed 7200/10000 images
+Rank 2: Processed 7200/10000 images
+Rank 4: Processed 7200/10000 images
+Rank 3: Processed 7300/10000 images
+Rank 1: Processed 7300/10000 images
+Rank 2: Processed 7300/10000 images
+Rank 3: Processed 7400/10000 images
+Rank 4: Processed 7300/10000 images
+Rank 1: Processed 7400/10000 images
+Rank 2: Processed 7400/10000 images
+Rank 3: Processed 7500/10000 images
+Rank 4: Processed 7400/10000 images
+Rank 1: Processed 7500/10000 images
+Rank 2: Processed 7500/10000 images
+Rank 4: Processed 7500/10000 images
+Rank 3: Processed 7600/10000 images
+Rank 1: Processed 7600/10000 images
+Rank 2: Processed 7600/10000 images
+Rank 4: Processed 7600/10000 images
+Rank 1: Processed 7700/10000 images
+Rank 3: Processed 7700/10000 images
+Rank 2: Processed 7700/10000 images
+Rank 4: Processed 7700/10000 images
+Rank 1: Processed 7800/10000 images
+Rank 3: Processed 7800/10000 images
+Rank 2: Processed 7800/10000 images
+Rank 4: Processed 7800/10000 images
+Rank 3: Processed 7900/10000 images
+Rank 1: Processed 7900/10000 images
+Rank 2: Processed 7900/10000 images
+Rank 4: Processed 7900/10000 images
+Rank 3: Processed 8000/10000 images
+Rank 1: Processed 8000/10000 images
+Rank 2: Processed 8000/10000 images
+Rank 1: Processed 8100/10000 images
+Rank 3: Processed 8100/10000 images
+Rank 4: Processed 8000/10000 images
+Rank 2: Processed 8100/10000 images
+Rank 1: Processed 8200/10000 images
+Rank 3: Processed 8200/10000 images
+Rank 4: Processed 8100/10000 images
+Rank 2: Processed 8200/10000 images
+Rank 1: Processed 8300/10000 images
+Rank 3: Processed 8300/10000 images
+Rank 4: Processed 8200/10000 images
+Rank 2: Processed 8300/10000 images
+Rank 1: Processed 8400/10000 images
+Rank 3: Processed 8400/10000 images
+Rank 4: Processed 8300/10000 images
+Rank 2: Processed 8400/10000 images
+Rank 1: Processed 8500/10000 images
+Rank 3: Processed 8500/10000 images
+Rank 4: Processed 8400/10000 images
+Rank 2: Processed 8500/10000 images
+Rank 1: Processed 8600/10000 images
+Rank 3: Processed 8600/10000 images
+Rank 4: Processed 8500/10000 images
+Rank 2: Processed 8600/10000 images
+Rank 3: Processed 8700/10000 images
+Rank 1: Processed 8700/10000 images
+Rank 4: Processed 8600/10000 images
+Rank 2: Processed 8700/10000 images
+Rank 3: Processed 8800/10000 images
+Rank 1: Processed 8800/10000 images
+Rank 4: Processed 8700/10000 images
+Rank 2: Processed 8800/10000 images
+Rank 3: Processed 8900/10000 images
+Rank 1: Processed 8900/10000 images
+Rank 2: Processed 8900/10000 images
+Rank 4: Processed 8800/10000 images
+Rank 3: Processed 9000/10000 images
+Rank 1: Processed 9000/10000 images
+Rank 4: Processed 8900/10000 images
+Rank 2: Processed 9000/10000 images
+Rank 3: Processed 9100/10000 images
+Rank 1: Processed 9100/10000 images
+Rank 4: Processed 9000/10000 images
+Rank 2: Processed 9100/10000 images
+Rank 3: Processed 9200/10000 images
+Rank 1: Processed 9200/10000 images
+Rank 2: Processed 9200/10000 images
+Rank 4: Processed 9100/10000 images
+Rank 3: Processed 9300/10000 images
+Rank 1: Processed 9300/10000 images
+Rank 4: Processed 9200/10000 images
+Rank 2: Processed 9300/10000 images
+Rank 3: Processed 9400/10000 images
+Rank 1: Processed 9400/10000 images
+Rank 4: Processed 9300/10000 images
+Rank 2: Processed 9400/10000 images
+Rank 3: Processed 9500/10000 images
+Rank 1: Processed 9500/10000 images
+Rank 4: Processed 9400/10000 images
+Rank 2: Processed 9500/10000 images
+Rank 3: Processed 9600/10000 images
+Rank 1: Processed 9600/10000 images
+Rank 4: Processed 9500/10000 images
+Rank 2: Processed 9600/10000 images
+Rank 3: Processed 9700/10000 images
+Rank 1: Processed 9700/10000 images
+Rank 4: Processed 9600/10000 images
+Rank 2: Processed 9700/10000 images
+Rank 3: Processed 9800/10000 images
+Rank 1: Processed 9800/10000 images
+Rank 4: Processed 9700/10000 images
+Rank 2: Processed 9800/10000 images
+Rank 3: Processed 9900/10000 images
+Rank 1: Processed 9900/10000 images
+Rank 4: Processed 9800/10000 images
+Rank 2: Processed 9900/10000 images
+Rank 3: Processed 10000/10000 images
+Rank 1: Processed 10000/10000 images
+Rank 4: Processed 9900/10000 images
+Rank 2: Processed 10000/10000 images
+Rank 4: Processed 10000/10000 images
+
+============================================================
+MPI PROCESSING SUMMARY
+============================================================
+
+Total images processed: 50000 / 50000
+Cluster nodes: 5
+
+Per-node statistics:
+  Rank 0: 10000 images, 28.89 img/sec
+  Rank 1: 10000 images, 28.59 img/sec
+  Rank 2: 10000 images, 28.55 img/sec
+  Rank 3: 10000 images, 28.60 img/sec
+  Rank 4: 10000 images, 28.32 img/sec
+
+Overall performance:
+  Total throughput: 141.60 images/sec
+  Speedup vs single-node: 3.87x
+============================================================
+
+
+End time: Thu Nov 20 03:33:17 PM UTC 2025
+
+========================================
+Testing with 118287 images
+========================================
+Start time: Thu Nov 20 03:33:20 PM UTC 2025
+
+MPI Image Processor initialized
+  Cluster size: 5 nodes
+  Dataset: /nfs/shared/projects/image/datasets/coco/train2017
+  Output: /nfs/shared/projects/image/results/gaussian_blur_mpi_118287
+Found 118287 images
+
+Work distribution:
+  Rank 0: 23658 images
+  Rank 1: 23658 images
+  Rank 2: 23657 images
+  Rank 3: 23657 images
+  Rank 4: 23657 images
+
+Rank 0: Processed 100/23658 images
+Rank 2: Processed 100/23657 images
+Rank 1: Processed 100/23658 images
+Rank 4: Processed 100/23657 images
+Rank 3: Processed 100/23657 images
+Rank 0: Processed 200/23658 images
+Rank 2: Processed 200/23657 images
+Rank 1: Processed 200/23658 images
+Rank 0: Processed 300/23658 images
+Rank 2: Processed 300/23657 images
+Rank 1: Processed 300/23658 images
+Rank 4: Processed 200/23657 images
+Rank 3: Processed 200/23657 images
+Rank 0: Processed 400/23658 images
+Rank 2: Processed 400/23657 images
+Rank 0: Processed 500/23658 images
+Rank 1: Processed 400/23658 images
+Rank 2: Processed 500/23657 images
+Rank 4: Processed 300/23657 images
+Rank 3: Processed 300/23657 images
+Rank 0: Processed 600/23658 images
+Rank 2: Processed 600/23657 images
+Rank 1: Processed 500/23658 images
+Rank 0: Processed 700/23658 images
+Rank 4: Processed 400/23657 images
+Rank 3: Processed 400/23657 images
+Rank 0: Processed 800/23658 images
+Rank 2: Processed 700/23657 images
+Rank 1: Processed 600/23658 images
+Rank 0: Processed 900/23658 images
+Rank 2: Processed 800/23657 images
+Rank 4: Processed 500/23657 images
+Rank 0: Processed 1000/23658 images
+Rank 3: Processed 500/23657 images
+Rank 2: Processed 900/23657 images
+Rank 1: Processed 700/23658 images
+Rank 0: Processed 1100/23658 images
+Rank 2: Processed 1000/23657 images
+Rank 4: Processed 600/23657 images
+Rank 0: Processed 1200/23658 images
+Rank 3: Processed 600/23657 images
+Rank 1: Processed 800/23658 images
+Rank 2: Processed 1100/23657 images
+Rank 0: Processed 1300/23658 images
+Rank 2: Processed 1200/23657 images
+Rank 4: Processed 700/23657 images
+Rank 0: Processed 1400/23658 images
+Rank 3: Processed 700/23657 images
+Rank 1: Processed 900/23658 images
+Rank 2: Processed 1300/23657 images
+Rank 0: Processed 1500/23658 images
+Rank 4: Processed 800/23657 images
+Rank 0: Processed 1600/23658 images
+Rank 2: Processed 1400/23657 images
+Rank 1: Processed 1000/23658 images
+Rank 3: Processed 800/23657 images
+Rank 0: Processed 1700/23658 images
+Rank 2: Processed 1500/23657 images
+Rank 4: Processed 900/23657 images
+Rank 0: Processed 1800/23658 images
+Rank 1: Processed 1100/23658 images
+Rank 3: Processed 900/23657 images
+Rank 2: Processed 1600/23657 images
+Rank 0: Processed 1900/23658 images
+Rank 2: Processed 1700/23657 images
+Rank 4: Processed 1000/23657 images
+Rank 0: Processed 2000/23658 images
+Rank 1: Processed 1200/23658 images
+Rank 3: Processed 1000/23657 images
+Rank 2: Processed 1800/23657 images
+Rank 0: Processed 2100/23658 images
+Rank 1: Processed 1300/23658 images
+Rank 4: Processed 1100/23657 images
+Rank 0: Processed 2200/23658 images
+Rank 2: Processed 1900/23657 images
+Rank 3: Processed 1100/23657 images
+Rank 0: Processed 2300/23658 images
+Rank 2: Processed 2000/23657 images
+Rank 1: Processed 1400/23658 images
+Rank 4: Processed 1200/23657 images
+Rank 0: Processed 2400/23658 images
+Rank 3: Processed 1200/23657 images
+Rank 2: Processed 2100/23657 images
+Rank 0: Processed 2500/23658 images
+Rank 1: Processed 1500/23658 images
+Rank 2: Processed 2200/23657 images
+Rank 4: Processed 1300/23657 images
+Rank 0: Processed 2600/23658 images
+Rank 3: Processed 1300/23657 images
+Rank 2: Processed 2300/23657 images
+Rank 0: Processed 2700/23658 images
+Rank 1: Processed 1600/23658 images
+Rank 4: Processed 1400/23657 images
+Rank 3: Processed 1400/23657 images
+Rank 2: Processed 2400/23657 images
+Rank 0: Processed 2800/23658 images
+Rank 1: Processed 1700/23658 images
+Rank 0: Processed 2900/23658 images
+Rank 2: Processed 2500/23657 images
+Rank 4: Processed 1500/23657 images
+Rank 3: Processed 1500/23657 images
+Rank 0: Processed 3000/23658 images
+Rank 2: Processed 2600/23657 images
+Rank 1: Processed 1800/23658 images
+Rank 0: Processed 3100/23658 images
+Rank 4: Processed 1600/23657 images
+Rank 2: Processed 2700/23657 images
+Rank 3: Processed 1600/23657 images
+Rank 0: Processed 3200/23658 images
+Rank 1: Processed 1900/23658 images
+Rank 0: Processed 3300/23658 images
+Rank 4: Processed 1700/23657 images
+Rank 2: Processed 2800/23657 images
+Rank 3: Processed 1700/23657 images
+Rank 0: Processed 3400/23658 images
+Rank 1: Processed 2000/23658 images
+Rank 0: Processed 3500/23658 images
+Rank 4: Processed 1800/23657 images
+Rank 2: Processed 2900/23657 images
+Rank 3: Processed 1800/23657 images
+Rank 0: Processed 3600/23658 images
+Rank 1: Processed 2100/23658 images
+Rank 0: Processed 3700/23658 images
+Rank 4: Processed 1900/23657 images
+Rank 2: Processed 3000/23657 images
+Rank 3: Processed 1900/23657 images
+Rank 0: Processed 3800/23658 images
+Rank 1: Processed 2200/23658 images
+Rank 4: Processed 2000/23657 images
+Rank 0: Processed 3900/23658 images
+Rank 2: Processed 3100/23657 images
+Rank 3: Processed 2000/23657 images
+Rank 0: Processed 4000/23658 images
+Rank 1: Processed 2300/23658 images
+Rank 4: Processed 2100/23657 images
+Rank 0: Processed 4100/23658 images
+Rank 2: Processed 3200/23657 images
+Rank 3: Processed 2100/23657 images
+Rank 0: Processed 4200/23658 images
+Rank 1: Processed 2400/23658 images
+Rank 4: Processed 2200/23657 images
+Rank 0: Processed 4300/23658 images
+Rank 2: Processed 3300/23657 images
+Rank 3: Processed 2200/23657 images
+Rank 0: Processed 4400/23658 images
+Rank 1: Processed 2500/23658 images
+Rank 0: Processed 4500/23658 images
+Rank 4: Processed 2300/23657 images
+Rank 2: Processed 3400/23657 images
+Rank 3: Processed 2300/23657 images
+Rank 1: Processed 2600/23658 images
+Rank 0: Processed 4600/23658 images
+Rank 4: Processed 2400/23657 images
+Rank 0: Processed 4700/23658 images
+Rank 2: Processed 3500/23657 images
+Rank 3: Processed 2400/23657 images
+Rank 1: Processed 2700/23658 images
+Rank 0: Processed 4800/23658 images
+Rank 4: Processed 2500/23657 images
+Rank 0: Processed 4900/23658 images
+Rank 2: Processed 3600/23657 images
+Rank 3: Processed 2500/23657 images
+Rank 1: Processed 2800/23658 images
+Rank 0: Processed 5000/23658 images
+Rank 4: Processed 2600/23657 images
+Rank 2: Processed 3700/23657 images
+Rank 3: Processed 2600/23657 images
+Rank 1: Processed 2900/23658 images
+Rank 0: Processed 5100/23658 images
+Rank 4: Processed 2700/23657 images
+Rank 2: Processed 3800/23657 images
+Rank 3: Processed 2700/23657 images
+Rank 1: Processed 3000/23658 images
+Rank 0: Processed 5200/23658 images
+Rank 4: Processed 2800/23657 images
+Rank 2: Processed 3900/23657 images
+Rank 1: Processed 3100/23658 images
+Rank 3: Processed 2800/23657 images
+Rank 0: Processed 5300/23658 images
+Rank 4: Processed 2900/23657 images
+Rank 1: Processed 3200/23658 images
+Rank 2: Processed 4000/23657 images
+Rank 0: Processed 5400/23658 images
+Rank 3: Processed 2900/23657 images
+Rank 4: Processed 3000/23657 images
+Rank 1: Processed 3300/23658 images
+Rank 2: Processed 4100/23657 images
+Rank 0: Processed 5500/23658 images
+Rank 3: Processed 3000/23657 images
+Rank 4: Processed 3100/23657 images
+Rank 1: Processed 3400/23658 images
+Rank 0: Processed 5600/23658 images
+Rank 2: Processed 4200/23657 images
+Rank 3: Processed 3100/23657 images
+Rank 1: Processed 3500/23658 images
+Rank 4: Processed 3200/23657 images
+Rank 0: Processed 5700/23658 images
+Rank 2: Processed 4300/23657 images
+Rank 3: Processed 3200/23657 images
+Rank 1: Processed 3600/23658 images
+Rank 0: Processed 5800/23658 images
+Rank 4: Processed 3300/23657 images
+Rank 2: Processed 4400/23657 images
+Rank 3: Processed 3300/23657 images
+Rank 1: Processed 3700/23658 images
+Rank 0: Processed 5900/23658 images
+Rank 4: Processed 3400/23657 images
+Rank 2: Processed 4500/23657 images
+Rank 3: Processed 3400/23657 images
+Rank 1: Processed 3800/23658 images
+Rank 0: Processed 6000/23658 images
+Rank 4: Processed 3500/23657 images
+Rank 2: Processed 4600/23657 images
+Rank 3: Processed 3500/23657 images
+Rank 1: Processed 3900/23658 images
+Rank 0: Processed 6100/23658 images
+Rank 4: Processed 3600/23657 images
+Rank 2: Processed 4700/23657 images
+Rank 3: Processed 3600/23657 images
+Rank 1: Processed 4000/23658 images
+Rank 0: Processed 6200/23658 images
+Rank 4: Processed 3700/23657 images
+Rank 2: Processed 4800/23657 images
+Rank 3: Processed 3700/23657 images
+Rank 1: Processed 4100/23658 images
+Rank 0: Processed 6300/23658 images
+Rank 4: Processed 3800/23657 images
+Rank 2: Processed 4900/23657 images
+Rank 3: Processed 3800/23657 images
+Rank 1: Processed 4200/23658 images
+Rank 0: Processed 6400/23658 images
+Rank 4: Processed 3900/23657 images
+Rank 2: Processed 5000/23657 images
+Rank 3: Processed 3900/23657 images
+Rank 1: Processed 4300/23658 images
+Rank 0: Processed 6500/23658 images
+Rank 4: Processed 4000/23657 images
+Rank 2: Processed 5100/23657 images
+Rank 3: Processed 4000/23657 images
+Rank 1: Processed 4400/23658 images
+Rank 0: Processed 6600/23658 images
+Rank 4: Processed 4100/23657 images
+Rank 2: Processed 5200/23657 images
+Rank 0: Processed 6700/23658 images
+Rank 3: Processed 4100/23657 images
+Rank 1: Processed 4500/23658 images
+Rank 4: Processed 4200/23657 images
+Rank 2: Processed 5300/23657 images
+Rank 0: Processed 6800/23658 images
+Rank 1: Processed 4600/23658 images
+Rank 3: Processed 4200/23657 images
+Rank 4: Processed 4300/23657 images
+Rank 2: Processed 5400/23657 images
+Rank 0: Processed 6900/23658 images
+Rank 1: Processed 4700/23658 images
+Rank 3: Processed 4300/23657 images
+Rank 2: Processed 5500/23657 images
+Rank 0: Processed 7000/23658 images
+Rank 4: Processed 4400/23657 images
+Rank 1: Processed 4800/23658 images
+Rank 3: Processed 4400/23657 images
+Rank 0: Processed 7100/23658 images
+Rank 2: Processed 5600/23657 images
+Rank 4: Processed 4500/23657 images
+Rank 1: Processed 4900/23658 images
+Rank 3: Processed 4500/23657 images
+Rank 0: Processed 7200/23658 images
+Rank 2: Processed 5700/23657 images
+Rank 4: Processed 4600/23657 images
+Rank 1: Processed 5000/23658 images
+Rank 3: Processed 4600/23657 images
+Rank 0: Processed 7300/23658 images
+Rank 2: Processed 5800/23657 images
+Rank 4: Processed 4700/23657 images
+Rank 1: Processed 5100/23658 images
+Rank 3: Processed 4700/23657 images
+Rank 0: Processed 7400/23658 images
+Rank 2: Processed 5900/23657 images
+Rank 1: Processed 5200/23658 images
+Rank 4: Processed 4800/23657 images
+Rank 3: Processed 4800/23657 images
+Rank 0: Processed 7500/23658 images
+Rank 2: Processed 6000/23657 images
+Rank 1: Processed 5300/23658 images
+Rank 4: Processed 4900/23657 images
+Rank 3: Processed 4900/23657 images
+Rank 0: Processed 7600/23658 images
+Rank 2: Processed 6100/23657 images
+Rank 1: Processed 5400/23658 images
+Rank 4: Processed 5000/23657 images
+Rank 3: Processed 5000/23657 images
+Rank 0: Processed 7700/23658 images
+Rank 2: Processed 6200/23657 images
+Rank 1: Processed 5500/23658 images
+Rank 4: Processed 5100/23657 images
+Rank 0: Processed 7800/23658 images
+Rank 3: Processed 5100/23657 images
+Rank 2: Processed 6300/23657 images
+Rank 1: Processed 5600/23658 images
+Rank 4: Processed 5200/23657 images
+Rank 0: Processed 7900/23658 images
+Rank 3: Processed 5200/23657 images
+Rank 2: Processed 6400/23657 images
+Rank 1: Processed 5700/23658 images
+Rank 0: Processed 8000/23658 images
+Rank 4: Processed 5300/23657 images
+Rank 3: Processed 5300/23657 images
+Rank 2: Processed 6500/23657 images
+Rank 1: Processed 5800/23658 images
+Rank 0: Processed 8100/23658 images
+Rank 4: Processed 5400/23657 images
+Rank 3: Processed 5400/23657 images
+Rank 2: Processed 6600/23657 images
+Rank 1: Processed 5900/23658 images
+Rank 0: Processed 8200/23658 images
+Rank 4: Processed 5500/23657 images
+Rank 3: Processed 5500/23657 images
+Rank 2: Processed 6700/23657 images
+Rank 1: Processed 6000/23658 images
+Rank 0: Processed 8300/23658 images
+Rank 4: Processed 5600/23657 images
+Rank 3: Processed 5600/23657 images
+Rank 1: Processed 6100/23658 images
+Rank 2: Processed 6800/23657 images
+Rank 0: Processed 8400/23658 images
+Rank 4: Processed 5700/23657 images
+Rank 3: Processed 5700/23657 images
+Rank 0: Processed 8500/23658 images
+Rank 1: Processed 6200/23658 images
+Rank 2: Processed 6900/23657 images
+Rank 4: Processed 5800/23657 images
+Rank 3: Processed 5800/23657 images
+Rank 0: Processed 8600/23658 images
+Rank 1: Processed 6300/23658 images
+Rank 2: Processed 7000/23657 images
+Rank 4: Processed 5900/23657 images
+Rank 3: Processed 5900/23657 images
+Rank 0: Processed 8700/23658 images
+Rank 1: Processed 6400/23658 images
+Rank 2: Processed 7100/23657 images
+Rank 4: Processed 6000/23657 images
+Rank 3: Processed 6000/23657 images
+Rank 0: Processed 8800/23658 images
+Rank 1: Processed 6500/23658 images
+Rank 2: Processed 7200/23657 images
+Rank 4: Processed 6100/23657 images
+Rank 3: Processed 6100/23657 images
+Rank 0: Processed 8900/23658 images
+Rank 1: Processed 6600/23658 images
+Rank 2: Processed 7300/23657 images
+Rank 4: Processed 6200/23657 images
+Rank 3: Processed 6200/23657 images
+Rank 0: Processed 9000/23658 images
+Rank 1: Processed 6700/23658 images
+Rank 2: Processed 7400/23657 images
+Rank 4: Processed 6300/23657 images
+Rank 0: Processed 9100/23658 images
+Rank 3: Processed 6300/23657 images
+Rank 1: Processed 6800/23658 images
+Rank 2: Processed 7500/23657 images
+Rank 0: Processed 9200/23658 images
+Rank 4: Processed 6400/23657 images
+Rank 3: Processed 6400/23657 images
+Rank 1: Processed 6900/23658 images
+Rank 2: Processed 7600/23657 images
+Rank 0: Processed 9300/23658 images
+Rank 4: Processed 6500/23657 images
+Rank 3: Processed 6500/23657 images
+Rank 1: Processed 7000/23658 images
+Rank 0: Processed 9400/23658 images
+Rank 2: Processed 7700/23657 images
+Rank 4: Processed 6600/23657 images
+Rank 3: Processed 6600/23657 images
+Rank 1: Processed 7100/23658 images
+Rank 0: Processed 9500/23658 images
+Rank 2: Processed 7800/23657 images
+Rank 4: Processed 6700/23657 images
+Rank 3: Processed 6700/23657 images
+Rank 1: Processed 7200/23658 images
+Rank 0: Processed 9600/23658 images
+Rank 2: Processed 7900/23657 images
+Rank 4: Processed 6800/23657 images
+Rank 3: Processed 6800/23657 images
+Rank 0: Processed 9700/23658 images
+Rank 1: Processed 7300/23658 images
+Rank 2: Processed 8000/23657 images
+Rank 3: Processed 6900/23657 images
+Rank 4: Processed 6900/23657 images
+Rank 0: Processed 9800/23658 images
+Rank 1: Processed 7400/23658 images
+Rank 2: Processed 8100/23657 images
+Rank 3: Processed 7000/23657 images
+Rank 4: Processed 7000/23657 images
+Rank 0: Processed 9900/23658 images
+Rank 1: Processed 7500/23658 images
+Rank 2: Processed 8200/23657 images
+Rank 3: Processed 7100/23657 images
+Rank 1: Processed 7600/23658 images
+Rank 4: Processed 7100/23657 images
+Rank 0: Processed 10000/23658 images
+Rank 2: Processed 8300/23657 images
+Rank 1: Processed 7700/23658 images
+Rank 3: Processed 7200/23657 images
+Rank 4: Processed 7200/23657 images
+Rank 0: Processed 10100/23658 images
+Rank 1: Processed 7800/23658 images
+Rank 2: Processed 8400/23657 images
+Rank 3: Processed 7300/23657 images
+Rank 1: Processed 7900/23658 images
+Rank 0: Processed 10200/23658 images
+Rank 4: Processed 7300/23657 images
+Rank 2: Processed 8500/23657 images
+Rank 1: Processed 8000/23658 images
+Rank 3: Processed 7400/23657 images
+Rank 0: Processed 10300/23658 images
+Rank 4: Processed 7400/23657 images
+Rank 1: Processed 8100/23658 images
+Rank 2: Processed 8600/23657 images
+Rank 0: Processed 10400/23658 images
+Rank 1: Processed 8200/23658 images
+Rank 3: Processed 7500/23657 images
+Rank 4: Processed 7500/23657 images
+Rank 1: Processed 8300/23658 images
+Rank 2: Processed 8700/23657 images
+Rank 0: Processed 10500/23658 images
+Rank 3: Processed 7600/23657 images
+Rank 1: Processed 8400/23658 images
+Rank 4: Processed 7600/23657 images
+Rank 2: Processed 8800/23657 images
+Rank 0: Processed 10600/23658 images
+Rank 1: Processed 8500/23658 images
+Rank 3: Processed 7700/23657 images
+Rank 4: Processed 7700/23657 images
+Rank 2: Processed 8900/23657 images
+Rank 1: Processed 8600/23658 images
+Rank 0: Processed 10700/23658 images
+Rank 3: Processed 7800/23657 images
+Rank 1: Processed 8700/23658 images
+Rank 4: Processed 7800/23657 images
+Rank 2: Processed 9000/23657 images
+Rank 0: Processed 10800/23658 images
+Rank 1: Processed 8800/23658 images
+Rank 3: Processed 7900/23657 images
+Rank 4: Processed 7900/23657 images
+Rank 1: Processed 8900/23658 images
+Rank 0: Processed 10900/23658 images
+Rank 2: Processed 9100/23657 images
+Rank 3: Processed 8000/23657 images
+Rank 1: Processed 9000/23658 images
+Rank 4: Processed 8000/23657 images
+Rank 0: Processed 11000/23658 images
+Rank 2: Processed 9200/23657 images
+Rank 1: Processed 9100/23658 images
+Rank 3: Processed 8100/23657 images
+Rank 0: Processed 11100/23658 images
+Rank 4: Processed 8100/23657 images
+Rank 1: Processed 9200/23658 images
+Rank 2: Processed 9300/23657 images
+Rank 3: Processed 8200/23657 images
+Rank 0: Processed 11200/23658 images
+Rank 1: Processed 9300/23658 images
+Rank 4: Processed 8200/23657 images
+Rank 2: Processed 9400/23657 images
+Rank 0: Processed 11300/23658 images
+Rank 1: Processed 9400/23658 images
+Rank 3: Processed 8300/23657 images
+Rank 0: Processed 11400/23658 images
+Rank 4: Processed 8300/23657 images
+Rank 1: Processed 9500/23658 images
+Rank 2: Processed 9500/23657 images
+Rank 0: Processed 11500/23658 images
+Rank 3: Processed 8400/23657 images
+Rank 1: Processed 9600/23658 images
+Rank 0: Processed 11600/23658 images
+Rank 4: Processed 8400/23657 images
+Rank 2: Processed 9600/23657 images
+Rank 1: Processed 9700/23658 images
+Rank 3: Processed 8500/23657 images
+Rank 0: Processed 11700/23658 images
+Rank 4: Processed 8500/23657 images
+Rank 0: Processed 11800/23658 images
+Rank 1: Processed 9800/23658 images
+Rank 2: Processed 9700/23657 images
+Rank 3: Processed 8600/23657 images
+Rank 0: Processed 11900/23658 images
+Rank 1: Processed 9900/23658 images
+Rank 4: Processed 8600/23657 images
+Rank 2: Processed 9800/23657 images
+Rank 0: Processed 12000/23658 images
+Rank 1: Processed 10000/23658 images
+Rank 3: Processed 8700/23657 images
+Rank 0: Processed 12100/23658 images
+Rank 4: Processed 8700/23657 images
+Rank 1: Processed 10100/23658 images
+Rank 2: Processed 9900/23657 images
+Rank 0: Processed 12200/23658 images
+Rank 3: Processed 8800/23657 images
+Rank 1: Processed 10200/23658 images
+Rank 0: Processed 12300/23658 images
+Rank 4: Processed 8800/23657 images
+Rank 2: Processed 10000/23657 images
+Rank 0: Processed 12400/23658 images
+Rank 1: Processed 10300/23658 images
+Rank 3: Processed 8900/23657 images
+Rank 0: Processed 12500/23658 images
+Rank 4: Processed 8900/23657 images
+Rank 2: Processed 10100/23657 images
+Rank 1: Processed 10400/23658 images
+Rank 3: Processed 9000/23657 images
+Rank 0: Processed 12600/23658 images
+Rank 0: Processed 12700/23658 images
+Rank 4: Processed 9000/23657 images
+Rank 2: Processed 10200/23657 images
+Rank 1: Processed 10500/23658 images
+Rank 3: Processed 9100/23657 images
+Rank 0: Processed 12800/23658 images
+Rank 1: Processed 10600/23658 images
+Rank 2: Processed 10300/23657 images
+Rank 4: Processed 9100/23657 images
+Rank 0: Processed 12900/23658 images
+Rank 3: Processed 9200/23657 images
+Rank 0: Processed 13000/23658 images
+Rank 1: Processed 10700/23658 images
+Rank 4: Processed 9200/23657 images
+Rank 2: Processed 10400/23657 images
+Rank 0: Processed 13100/23658 images
+Rank 3: Processed 9300/23657 images
+Rank 0: Processed 13200/23658 images
+Rank 1: Processed 10800/23658 images
+Rank 2: Processed 10500/23657 images
+Rank 4: Processed 9300/23657 images
+Rank 0: Processed 13300/23658 images
+Rank 3: Processed 9400/23657 images
+Rank 0: Processed 13400/23658 images
+Rank 1: Processed 10900/23658 images
+Rank 4: Processed 9400/23657 images
+Rank 2: Processed 10600/23657 images
+Rank 0: Processed 13500/23658 images
+Rank 3: Processed 9500/23657 images
+Rank 0: Processed 13600/23658 images
+Rank 1: Processed 11000/23658 images
+Rank 2: Processed 10700/23657 images
+Rank 4: Processed 9500/23657 images
+Rank 3: Processed 9600/23657 images
+Rank 0: Processed 13700/23658 images
+Rank 0: Processed 13800/23658 images
+Rank 1: Processed 11100/23658 images
+Rank 4: Processed 9600/23657 images
+Rank 2: Processed 10800/23657 images
+Rank 3: Processed 9700/23657 images
+Rank 0: Processed 13900/23658 images
+Rank 1: Processed 11200/23658 images
+Rank 4: Processed 9700/23657 images
+Rank 0: Processed 14000/23658 images
+Rank 2: Processed 10900/23657 images
+Rank 3: Processed 9800/23657 images
+Rank 0: Processed 14100/23658 images
+Rank 1: Processed 11300/23658 images
+Rank 4: Processed 9800/23657 images
+Rank 2: Processed 11000/23657 images
+Rank 3: Processed 9900/23657 images
+Rank 0: Processed 14200/23658 images
+Rank 1: Processed 11400/23658 images
+Rank 4: Processed 9900/23657 images
+Rank 2: Processed 11100/23657 images
+Rank 3: Processed 10000/23657 images
+Rank 0: Processed 14300/23658 images
+Rank 1: Processed 11500/23658 images
+Rank 4: Processed 10000/23657 images
+Rank 2: Processed 11200/23657 images
+Rank 3: Processed 10100/23657 images
+Rank 0: Processed 14400/23658 images
+Rank 1: Processed 11600/23658 images
+Rank 4: Processed 10100/23657 images
+Rank 2: Processed 11300/23657 images
+Rank 3: Processed 10200/23657 images
+Rank 0: Processed 14500/23658 images
+Rank 1: Processed 11700/23658 images
+Rank 4: Processed 10200/23657 images
+Rank 2: Processed 11400/23657 images
+Rank 3: Processed 10300/23657 images
+Rank 0: Processed 14600/23658 images
+Rank 1: Processed 11800/23658 images
+Rank 4: Processed 10300/23657 images
+Rank 2: Processed 11500/23657 images
+Rank 3: Processed 10400/23657 images
+Rank 0: Processed 14700/23658 images
+Rank 4: Processed 10400/23657 images
+Rank 1: Processed 11900/23658 images
+Rank 2: Processed 11600/23657 images
+Rank 3: Processed 10500/23657 images
+Rank 0: Processed 14800/23658 images
+Rank 1: Processed 12000/23658 images
+Rank 4: Processed 10500/23657 images
+Rank 2: Processed 11700/23657 images
+Rank 3: Processed 10600/23657 images
+Rank 0: Processed 14900/23658 images
+Rank 1: Processed 12100/23658 images
+Rank 4: Processed 10600/23657 images
+Rank 2: Processed 11800/23657 images
+Rank 0: Processed 15000/23658 images
+Rank 3: Processed 10700/23657 images
+Rank 1: Processed 12200/23658 images
+Rank 0: Processed 15100/23658 images
+Rank 4: Processed 10700/23657 images
+Rank 2: Processed 11900/23657 images
+Rank 3: Processed 10800/23657 images
+Rank 1: Processed 12300/23658 images
+Rank 0: Processed 15200/23658 images
+Rank 4: Processed 10800/23657 images
+Rank 2: Processed 12000/23657 images
+Rank 3: Processed 10900/23657 images
+Rank 1: Processed 12400/23658 images
+Rank 0: Processed 15300/23658 images
+Rank 4: Processed 10900/23657 images
+Rank 2: Processed 12100/23657 images
+Rank 3: Processed 11000/23657 images
+Rank 1: Processed 12500/23658 images
+Rank 0: Processed 15400/23658 images
+Rank 4: Processed 11000/23657 images
+Rank 2: Processed 12200/23657 images
+Rank 3: Processed 11100/23657 images
+Rank 0: Processed 15500/23658 images
+Rank 1: Processed 12600/23658 images
+Rank 2: Processed 12300/23657 images
+Rank 4: Processed 11100/23657 images
+Rank 3: Processed 11200/23657 images
+Rank 0: Processed 15600/23658 images
+Rank 1: Processed 12700/23658 images
+Rank 2: Processed 12400/23657 images
+Rank 4: Processed 11200/23657 images
+Rank 3: Processed 11300/23657 images
+Rank 0: Processed 15700/23658 images
+Rank 1: Processed 12800/23658 images
+Rank 2: Processed 12500/23657 images
+Rank 4: Processed 11300/23657 images
+Rank 3: Processed 11400/23657 images
+Rank 0: Processed 15800/23658 images
+Rank 1: Processed 12900/23658 images
+Rank 2: Processed 12600/23657 images
+Rank 4: Processed 11400/23657 images
+Rank 3: Processed 11500/23657 images
+Rank 0: Processed 15900/23658 images
+Rank 1: Processed 13000/23658 images
+Rank 2: Processed 12700/23657 images
+Rank 3: Processed 11600/23657 images
+Rank 4: Processed 11500/23657 images
+Rank 0: Processed 16000/23658 images
+Rank 1: Processed 13100/23658 images
+Rank 2: Processed 12800/23657 images
+Rank 3: Processed 11700/23657 images
+Rank 4: Processed 11600/23657 images
+Rank 0: Processed 16100/23658 images
+Rank 1: Processed 13200/23658 images
+Rank 2: Processed 12900/23657 images
+Rank 3: Processed 11800/23657 images
+Rank 4: Processed 11700/23657 images
+Rank 0: Processed 16200/23658 images
+Rank 1: Processed 13300/23658 images
+Rank 3: Processed 11900/23657 images
+Rank 2: Processed 13000/23657 images
+Rank 4: Processed 11800/23657 images
+Rank 0: Processed 16300/23658 images
+Rank 1: Processed 13400/23658 images
+Rank 4: Processed 11900/23657 images
+Rank 2: Processed 13100/23657 images
+Rank 3: Processed 12000/23657 images
+Rank 0: Processed 16400/23658 images
+Rank 1: Processed 13500/23658 images
+Rank 0: Processed 16500/23658 images
+Rank 4: Processed 12000/23657 images
+Rank 3: Processed 12100/23657 images
+Rank 2: Processed 13200/23657 images
+Rank 1: Processed 13600/23658 images
+Rank 0: Processed 16600/23658 images
+Rank 4: Processed 12100/23657 images
+Rank 3: Processed 12200/23657 images
+Rank 2: Processed 13300/23657 images
+Rank 1: Processed 13700/23658 images
+Rank 0: Processed 16700/23658 images
+Rank 4: Processed 12200/23657 images
+Rank 3: Processed 12300/23657 images
+Rank 2: Processed 13400/23657 images
+Rank 1: Processed 13800/23658 images
+Rank 0: Processed 16800/23658 images
+Rank 4: Processed 12300/23657 images
+Rank 3: Processed 12400/23657 images
+Rank 2: Processed 13500/23657 images
+Rank 1: Processed 13900/23658 images
+Rank 0: Processed 16900/23658 images
+Rank 4: Processed 12400/23657 images
+Rank 3: Processed 12500/23657 images
+Rank 2: Processed 13600/23657 images
+Rank 1: Processed 14000/23658 images
+Rank 0: Processed 17000/23658 images
+Rank 4: Processed 12500/23657 images
+Rank 3: Processed 12600/23657 images
+Rank 2: Processed 13700/23657 images
+Rank 1: Processed 14100/23658 images
+Rank 0: Processed 17100/23658 images
+Rank 4: Processed 12600/23657 images
+Rank 3: Processed 12700/23657 images
+Rank 2: Processed 13800/23657 images
+Rank 1: Processed 14200/23658 images
+Rank 0: Processed 17200/23658 images
+Rank 0: Processed 17300/23658 images
+Rank 4: Processed 12700/23657 images
+Rank 3: Processed 12800/23657 images
+Rank 2: Processed 13900/23657 images
+Rank 1: Processed 14300/23658 images
+Rank 0: Processed 17400/23658 images
+Rank 4: Processed 12800/23657 images
+Rank 3: Processed 12900/23657 images
+Rank 2: Processed 14000/23657 images
+Rank 1: Processed 14400/23658 images
+Rank 0: Processed 17500/23658 images
+Rank 4: Processed 12900/23657 images
+Rank 3: Processed 13000/23657 images
+Rank 1: Processed 14500/23658 images
+Rank 2: Processed 14100/23657 images
+Rank 0: Processed 17600/23658 images
+Rank 4: Processed 13000/23657 images
+Rank 1: Processed 14600/23658 images
+Rank 3: Processed 13100/23657 images
+Rank 2: Processed 14200/23657 images
+Rank 0: Processed 17700/23658 images
+Rank 4: Processed 13100/23657 images
+Rank 3: Processed 13200/23657 images
+Rank 1: Processed 14700/23658 images
+Rank 2: Processed 14300/23657 images
+Rank 0: Processed 17800/23658 images
+Rank 1: Processed 14800/23658 images
+Rank 3: Processed 13300/23657 images
+Rank 4: Processed 13200/23657 images
+Rank 2: Processed 14400/23657 images
+Rank 0: Processed 17900/23658 images
+Rank 1: Processed 14900/23658 images
+Rank 3: Processed 13400/23657 images
+Rank 4: Processed 13300/23657 images
+Rank 2: Processed 14500/23657 images
+Rank 0: Processed 18000/23658 images
+Rank 1: Processed 15000/23658 images
+Rank 3: Processed 13500/23657 images
+Rank 4: Processed 13400/23657 images
+Rank 2: Processed 14600/23657 images
+Rank 0: Processed 18100/23658 images
+Rank 1: Processed 15100/23658 images
+Rank 3: Processed 13600/23657 images
+Rank 4: Processed 13500/23657 images
+Rank 0: Processed 18200/23658 images
+Rank 2: Processed 14700/23657 images
+Rank 1: Processed 15200/23658 images
+Rank 3: Processed 13700/23657 images
+Rank 0: Processed 18300/23658 images
+Rank 2: Processed 14800/23657 images
+Rank 4: Processed 13600/23657 images
+Rank 1: Processed 15300/23658 images
+Rank 0: Processed 18400/23658 images
+Rank 3: Processed 13800/23657 images
+Rank 2: Processed 14900/23657 images
+Rank 4: Processed 13700/23657 images
+Rank 0: Processed 18500/23658 images
+Rank 1: Processed 15400/23658 images
+Rank 3: Processed 13900/23657 images
+Rank 2: Processed 15000/23657 images
+Rank 4: Processed 13800/23657 images
+Rank 0: Processed 18600/23658 images
+Rank 1: Processed 15500/23658 images
+Rank 3: Processed 14000/23657 images
+Rank 2: Processed 15100/23657 images
+Rank 4: Processed 13900/23657 images
+Rank 0: Processed 18700/23658 images
+Rank 1: Processed 15600/23658 images
+Rank 2: Processed 15200/23657 images
+Rank 3: Processed 14100/23657 images
+Rank 4: Processed 14000/23657 images
+Rank 0: Processed 18800/23658 images
+Rank 1: Processed 15700/23658 images
+Rank 2: Processed 15300/23657 images
+Rank 3: Processed 14200/23657 images
+Rank 4: Processed 14100/23657 images
+Rank 0: Processed 18900/23658 images
+Rank 1: Processed 15800/23658 images
+Rank 2: Processed 15400/23657 images
+Rank 3: Processed 14300/23657 images
+Rank 4: Processed 14200/23657 images
+Rank 0: Processed 19000/23658 images
+Rank 1: Processed 15900/23658 images
+Rank 2: Processed 15500/23657 images
+Rank 3: Processed 14400/23657 images
+Rank 4: Processed 14300/23657 images
+Rank 0: Processed 19100/23658 images
+Rank 1: Processed 16000/23658 images
+Rank 2: Processed 15600/23657 images
+Rank 4: Processed 14400/23657 images
+Rank 3: Processed 14500/23657 images
+Rank 0: Processed 19200/23658 images
+Rank 1: Processed 16100/23658 images
+Rank 2: Processed 15700/23657 images
+Rank 4: Processed 14500/23657 images
+Rank 3: Processed 14600/23657 images
+Rank 0: Processed 19300/23658 images
+Rank 1: Processed 16200/23658 images
+Rank 2: Processed 15800/23657 images
+Rank 4: Processed 14600/23657 images
+Rank 3: Processed 14700/23657 images
+Rank 0: Processed 19400/23658 images
+Rank 1: Processed 16300/23658 images
+Rank 2: Processed 15900/23657 images
+Rank 3: Processed 14800/23657 images
+Rank 4: Processed 14700/23657 images
+Rank 0: Processed 19500/23658 images
+Rank 1: Processed 16400/23658 images
+Rank 2: Processed 16000/23657 images
+Rank 3: Processed 14900/23657 images
+Rank 4: Processed 14800/23657 images
+Rank 0: Processed 19600/23658 images
+Rank 1: Processed 16500/23658 images
+Rank 2: Processed 16100/23657 images
+Rank 3: Processed 15000/23657 images
+Rank 4: Processed 14900/23657 images
+Rank 0: Processed 19700/23658 images
+Rank 1: Processed 16600/23658 images
+Rank 2: Processed 16200/23657 images
+Rank 3: Processed 15100/23657 images
+Rank 4: Processed 15000/23657 images
+Rank 0: Processed 19800/23658 images
+Rank 1: Processed 16700/23658 images
+Rank 2: Processed 16300/23657 images
+Rank 3: Processed 15200/23657 images
+Rank 4: Processed 15100/23657 images
+Rank 0: Processed 19900/23658 images
+Rank 2: Processed 16400/23657 images
+Rank 1: Processed 16800/23658 images
+Rank 3: Processed 15300/23657 images
+Rank 0: Processed 20000/23658 images
+Rank 4: Processed 15200/23657 images
+Rank 1: Processed 16900/23658 images
+Rank 2: Processed 16500/23657 images
+Rank 3: Processed 15400/23657 images
+Rank 0: Processed 20100/23658 images
+Rank 4: Processed 15300/23657 images
+Rank 2: Processed 16600/23657 images
+Rank 1: Processed 17000/23658 images
+Rank 3: Processed 15500/23657 images
+Rank 0: Processed 20200/23658 images
+Rank 4: Processed 15400/23657 images
+Rank 2: Processed 16700/23657 images
+Rank 1: Processed 17100/23658 images
+Rank 3: Processed 15600/23657 images
+Rank 0: Processed 20300/23658 images
+Rank 4: Processed 15500/23657 images
+Rank 2: Processed 16800/23657 images
+Rank 1: Processed 17200/23658 images
+Rank 3: Processed 15700/23657 images
+Rank 0: Processed 20400/23658 images
+Rank 4: Processed 15600/23657 images
+Rank 2: Processed 16900/23657 images
+Rank 1: Processed 17300/23658 images
+Rank 0: Processed 20500/23658 images
+Rank 3: Processed 15800/23657 images
+Rank 4: Processed 15700/23657 images
+Rank 2: Processed 17000/23657 images
+Rank 1: Processed 17400/23658 images
+Rank 0: Processed 20600/23658 images
+Rank 3: Processed 15900/23657 images
+Rank 4: Processed 15800/23657 images
+Rank 2: Processed 17100/23657 images
+Rank 0: Processed 20700/23658 images
+Rank 1: Processed 17500/23658 images
+Rank 3: Processed 16000/23657 images
+Rank 4: Processed 15900/23657 images
+Rank 2: Processed 17200/23657 images
+Rank 0: Processed 20800/23658 images
+Rank 1: Processed 17600/23658 images
+Rank 3: Processed 16100/23657 images
+Rank 4: Processed 16000/23657 images
+Rank 2: Processed 17300/23657 images
+Rank 0: Processed 20900/23658 images
+Rank 1: Processed 17700/23658 images
+Rank 3: Processed 16200/23657 images
+Rank 4: Processed 16100/23657 images
+Rank 2: Processed 17400/23657 images
+Rank 0: Processed 21000/23658 images
+Rank 1: Processed 17800/23658 images
+Rank 3: Processed 16300/23657 images
+Rank 4: Processed 16200/23657 images
+Rank 2: Processed 17500/23657 images
+Rank 0: Processed 21100/23658 images
+Rank 1: Processed 17900/23658 images
+Rank 3: Processed 16400/23657 images
+Rank 4: Processed 16300/23657 images
+Rank 2: Processed 17600/23657 images
+Rank 0: Processed 21200/23658 images
+Rank 1: Processed 18000/23658 images
+Rank 3: Processed 16500/23657 images
+Rank 4: Processed 16400/23657 images
+Rank 0: Processed 21300/23658 images
+Rank 2: Processed 17700/23657 images
+Rank 1: Processed 18100/23658 images
+Rank 3: Processed 16600/23657 images
+Rank 4: Processed 16500/23657 images
+Rank 0: Processed 21400/23658 images
+Rank 2: Processed 17800/23657 images
+Rank 1: Processed 18200/23658 images
+Rank 3: Processed 16700/23657 images
+Rank 4: Processed 16600/23657 images
+Rank 0: Processed 21500/23658 images
+Rank 2: Processed 17900/23657 images
+Rank 1: Processed 18300/23658 images
+Rank 3: Processed 16800/23657 images
+Rank 4: Processed 16700/23657 images
+Rank 0: Processed 21600/23658 images
+Rank 2: Processed 18000/23657 images
+Rank 1: Processed 18400/23658 images
+Rank 3: Processed 16900/23657 images
+Rank 4: Processed 16800/23657 images
+Rank 0: Processed 21700/23658 images
+Rank 2: Processed 18100/23657 images
+Rank 1: Processed 18500/23658 images
+Rank 3: Processed 17000/23657 images
+Rank 0: Processed 21800/23658 images
+Rank 4: Processed 16900/23657 images
+Rank 2: Processed 18200/23657 images
+Rank 1: Processed 18600/23658 images
+Rank 3: Processed 17100/23657 images
+Rank 0: Processed 21900/23658 images
+Rank 4: Processed 17000/23657 images
+Rank 2: Processed 18300/23657 images
+Rank 1: Processed 18700/23658 images
+Rank 3: Processed 17200/23657 images
+Rank 0: Processed 22000/23658 images
+Rank 4: Processed 17100/23657 images
+Rank 2: Processed 18400/23657 images
+Rank 1: Processed 18800/23658 images
+Rank 0: Processed 22100/23658 images
+Rank 3: Processed 17300/23657 images
+Rank 4: Processed 17200/23657 images
+Rank 2: Processed 18500/23657 images
+Rank 1: Processed 18900/23658 images
+Rank 0: Processed 22200/23658 images
+Rank 3: Processed 17400/23657 images
+Rank 4: Processed 17300/23657 images
+Rank 2: Processed 18600/23657 images
+Rank 1: Processed 19000/23658 images
+Rank 0: Processed 22300/23658 images
+Rank 3: Processed 17500/23657 images
+Rank 4: Processed 17400/23657 images
+Rank 2: Processed 18700/23657 images
+Rank 0: Processed 22400/23658 images
+Rank 1: Processed 19100/23658 images
+Rank 3: Processed 17600/23657 images
+Rank 4: Processed 17500/23657 images
+Rank 2: Processed 18800/23657 images
+Rank 0: Processed 22500/23658 images
+Rank 1: Processed 19200/23658 images
+Rank 3: Processed 17700/23657 images
+Rank 4: Processed 17600/23657 images
+Rank 2: Processed 18900/23657 images
+Rank 0: Processed 22600/23658 images
+Rank 1: Processed 19300/23658 images
+Rank 3: Processed 17800/23657 images
+Rank 4: Processed 17700/23657 images
+Rank 2: Processed 19000/23657 images
+Rank 0: Processed 22700/23658 images
+Rank 1: Processed 19400/23658 images
+Rank 3: Processed 17900/23657 images
+Rank 4: Processed 17800/23657 images
+Rank 2: Processed 19100/23657 images
+Rank 0: Processed 22800/23658 images
+Rank 1: Processed 19500/23658 images
+Rank 3: Processed 18000/23657 images
+Rank 4: Processed 17900/23657 images
+Rank 2: Processed 19200/23657 images
+Rank 0: Processed 22900/23658 images
+Rank 1: Processed 19600/23658 images
+Rank 3: Processed 18100/23657 images
+Rank 4: Processed 18000/23657 images
+Rank 0: Processed 23000/23658 images
+Rank 2: Processed 19300/23657 images
+Rank 1: Processed 19700/23658 images
+Rank 3: Processed 18200/23657 images
+Rank 0: Processed 23100/23658 images
+Rank 4: Processed 18100/23657 images
+Rank 2: Processed 19400/23657 images
+Rank 1: Processed 19800/23658 images
+Rank 3: Processed 18300/23657 images
+Rank 0: Processed 23200/23658 images
+Rank 4: Processed 18200/23657 images
+Rank 2: Processed 19500/23657 images
+Rank 1: Processed 19900/23658 images
+Rank 3: Processed 18400/23657 images
+Rank 0: Processed 23300/23658 images
+Rank 4: Processed 18300/23657 images
+Rank 2: Processed 19600/23657 images
+Rank 1: Processed 20000/23658 images
+Rank 3: Processed 18500/23657 images
+Rank 0: Processed 23400/23658 images
+Rank 4: Processed 18400/23657 images
+Rank 2: Processed 19700/23657 images
+Rank 1: Processed 20100/23658 images
+Rank 3: Processed 18600/23657 images
+Rank 0: Processed 23500/23658 images
+Rank 4: Processed 18500/23657 images
+Rank 2: Processed 19800/23657 images
+Rank 1: Processed 20200/23658 images
+Rank 3: Processed 18700/23657 images
+Rank 0: Processed 23600/23658 images
+Rank 4: Processed 18600/23657 images
+Rank 2: Processed 19900/23657 images
+Rank 1: Processed 20300/23658 images
+Rank 3: Processed 18800/23657 images
+Rank 4: Processed 18700/23657 images
+Rank 2: Processed 20000/23657 images
+Rank 1: Processed 20400/23658 images
+Rank 3: Processed 18900/23657 images
+Rank 4: Processed 18800/23657 images
+Rank 2: Processed 20100/23657 images
+Rank 1: Processed 20500/23658 images
+Rank 3: Processed 19000/23657 images
+Rank 4: Processed 18900/23657 images
+Rank 2: Processed 20200/23657 images
+Rank 1: Processed 20600/23658 images
+Rank 3: Processed 19100/23657 images
+Rank 4: Processed 19000/23657 images
+Rank 2: Processed 20300/23657 images
+Rank 1: Processed 20700/23658 images
+Rank 3: Processed 19200/23657 images
+Rank 4: Processed 19100/23657 images
+Rank 2: Processed 20400/23657 images
+Rank 1: Processed 20800/23658 images
+Rank 3: Processed 19300/23657 images
+Rank 2: Processed 20500/23657 images
+Rank 4: Processed 19200/23657 images
+Rank 1: Processed 20900/23658 images
+Rank 3: Processed 19400/23657 images
+Rank 2: Processed 20600/23657 images
+Rank 4: Processed 19300/23657 images
+Rank 1: Processed 21000/23658 images
+Rank 3: Processed 19500/23657 images
+Rank 2: Processed 20700/23657 images
+Rank 4: Processed 19400/23657 images
+Rank 1: Processed 21100/23658 images
+Rank 3: Processed 19600/23657 images
+Rank 2: Processed 20800/23657 images
+Rank 4: Processed 19500/23657 images
+Rank 1: Processed 21200/23658 images
+Rank 3: Processed 19700/23657 images
+Rank 2: Processed 20900/23657 images
+Rank 4: Processed 19600/23657 images
+Rank 1: Processed 21300/23658 images
+Rank 3: Processed 19800/23657 images
+Rank 4: Processed 19700/23657 images
+Rank 2: Processed 21000/23657 images
+Rank 1: Processed 21400/23658 images
+Rank 3: Processed 19900/23657 images
+Rank 2: Processed 21100/23657 images
+Rank 4: Processed 19800/23657 images
+Rank 1: Processed 21500/23658 images
+Rank 3: Processed 20000/23657 images
+Rank 2: Processed 21200/23657 images
+Rank 4: Processed 19900/23657 images
+Rank 1: Processed 21600/23658 images
+Rank 3: Processed 20100/23657 images
+Rank 2: Processed 21300/23657 images
+Rank 4: Processed 20000/23657 images
+Rank 1: Processed 21700/23658 images
+Rank 3: Processed 20200/23657 images
+Rank 2: Processed 21400/23657 images
+Rank 4: Processed 20100/23657 images
+Rank 1: Processed 21800/23658 images
+Rank 3: Processed 20300/23657 images
+Rank 2: Processed 21500/23657 images
+Rank 4: Processed 20200/23657 images
+Rank 1: Processed 21900/23658 images
+Rank 3: Processed 20400/23657 images
+Rank 4: Processed 20300/23657 images
+Rank 2: Processed 21600/23657 images
+Rank 1: Processed 22000/23658 images
+Rank 3: Processed 20500/23657 images
+Rank 4: Processed 20400/23657 images
+Rank 2: Processed 21700/23657 images
+Rank 1: Processed 22100/23658 images
+Rank 3: Processed 20600/23657 images
+Rank 4: Processed 20500/23657 images
+Rank 2: Processed 21800/23657 images
+Rank 1: Processed 22200/23658 images
+Rank 3: Processed 20700/23657 images
+Rank 4: Processed 20600/23657 images
+Rank 2: Processed 21900/23657 images
+Rank 1: Processed 22300/23658 images
+Rank 3: Processed 20800/23657 images
+Rank 4: Processed 20700/23657 images
+Rank 2: Processed 22000/23657 images
+Rank 1: Processed 22400/23658 images
+Rank 3: Processed 20900/23657 images
+Rank 4: Processed 20800/23657 images
+Rank 2: Processed 22100/23657 images
+Rank 3: Processed 21000/23657 images
+Rank 1: Processed 22500/23658 images
+Rank 4: Processed 20900/23657 images
+Rank 2: Processed 22200/23657 images
+Rank 3: Processed 21100/23657 images
+Rank 1: Processed 22600/23658 images
+Rank 4: Processed 21000/23657 images
+Rank 2: Processed 22300/23657 images
+Rank 1: Processed 22700/23658 images
+Rank 3: Processed 21200/23657 images
+Rank 4: Processed 21100/23657 images
+Rank 2: Processed 22400/23657 images
+Rank 1: Processed 22800/23658 images
+Rank 3: Processed 21300/23657 images
+Rank 2: Processed 22500/23657 images
+Rank 4: Processed 21200/23657 images
+Rank 1: Processed 22900/23658 images
+Rank 3: Processed 21400/23657 images
+Rank 2: Processed 22600/23657 images
+Rank 4: Processed 21300/23657 images
+Rank 1: Processed 23000/23658 images
+Rank 3: Processed 21500/23657 images
+Rank 4: Processed 21400/23657 images
+Rank 2: Processed 22700/23657 images
+Rank 3: Processed 21600/23657 images
+Rank 1: Processed 23100/23658 images
+Rank 4: Processed 21500/23657 images
+Rank 2: Processed 22800/23657 images
+Rank 3: Processed 21700/23657 images
+Rank 1: Processed 23200/23658 images
+Rank 4: Processed 21600/23657 images
+Rank 2: Processed 22900/23657 images
+Rank 3: Processed 21800/23657 images
+Rank 1: Processed 23300/23658 images
+Rank 4: Processed 21700/23657 images
+Rank 2: Processed 23000/23657 images
+Rank 3: Processed 21900/23657 images
+Rank 1: Processed 23400/23658 images
+Rank 4: Processed 21800/23657 images
+Rank 2: Processed 23100/23657 images
+Rank 3: Processed 22000/23657 images
+Rank 1: Processed 23500/23658 images
+Rank 4: Processed 21900/23657 images
+Rank 2: Processed 23200/23657 images
+Rank 3: Processed 22100/23657 images
+Rank 1: Processed 23600/23658 images
+Rank 4: Processed 22000/23657 images
+Rank 2: Processed 23300/23657 images
+Rank 3: Processed 22200/23657 images
+Rank 4: Processed 22100/23657 images
+Rank 2: Processed 23400/23657 images
+Rank 3: Processed 22300/23657 images
+Rank 4: Processed 22200/23657 images
+Rank 2: Processed 23500/23657 images
+Rank 3: Processed 22400/23657 images
+Rank 2: Processed 23600/23657 images
+Rank 4: Processed 22300/23657 images
+Rank 3: Processed 22500/23657 images
+Rank 4: Processed 22400/23657 images
+Rank 3: Processed 22600/23657 images
+Rank 4: Processed 22500/23657 images
+Rank 3: Processed 22700/23657 images
+Rank 4: Processed 22600/23657 images
+Rank 3: Processed 22800/23657 images
+Rank 4: Processed 22700/23657 images
+Rank 3: Processed 22900/23657 images
+Rank 4: Processed 22800/23657 images
+Rank 3: Processed 23000/23657 images
+Rank 3: Processed 23100/23657 images
+Rank 4: Processed 22900/23657 images
+Rank 3: Processed 23200/23657 images
+Rank 4: Processed 23000/23657 images
+Rank 3: Processed 23300/23657 images
+Rank 4: Processed 23100/23657 images
+Rank 4: Processed 23200/23657 images
+Rank 3: Processed 23400/23657 images
+Rank 4: Processed 23300/23657 images
+Rank 3: Processed 23500/23657 images
+Rank 4: Processed 23400/23657 images
+Rank 3: Processed 23600/23657 images
+Rank 4: Processed 23500/23657 images
+Rank 4: Processed 23600/23657 images
+
+============================================================
+MPI PROCESSING SUMMARY
+============================================================
+
+Total images processed: 118287 / 118287
+Cluster nodes: 5
+
+Per-node statistics:
+  Rank 0: 23658 images, 28.40 img/sec
+  Rank 1: 23658 images, 28.30 img/sec
+  Rank 2: 23657 images, 28.68 img/sec
+  Rank 3: 23657 images, 28.55 img/sec
+  Rank 4: 23657 images, 28.23 img/sec
+
+Overall performance:
+  Total throughput: 141.13 images/sec
+  Speedup vs single-node: 3.85x
+============================================================
+
+
+End time: Thu Nov 20 04:10:49 PM UTC 2025
+
+======================================
+Benchmark Complete!
+Results saved to: /nfs/shared/projects/image/docs/phase2_benchmark_results.txt
+======================================
