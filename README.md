@@ -61,8 +61,8 @@ image/
 ## Development Phases
 
 - [x] **Phase 1**: Single-node CPU implementation (baseline)
-- [ ] **Phase 2**: MPI distribution across compute nodes
-- [ ] **Phase 3**: GPU acceleration with CUDA
+- [x] **Phase 2**: MPI distribution across compute nodes
+- [x] **Phase 3**: GPU acceleration with CUDA
 - [ ] **Phase 4**: Hybrid CPU+GPU pipeline
 - [ ] **Phase 5**: Benchmarking and optimization
 
@@ -147,17 +147,23 @@ All code is developed as `.py` modules (not Jupyter notebooks) for:
 
 ## Performance Goals
 
-###[x] Phase 1 (Single-node CPU implementation)
+###[x] Phase 1: (Single-node CPU implementation)
 - Single-threaded: ~36 images/sec 
 - Completed: November 18, 2025
 
-###[x] Phase 2 (MPI distribution across compute nodes)
+###[x] Phase 2: (MPI distribution across compute nodes)
 - Performance: 141.13 images/sec
 - Speedup: 3.85x (77% parallel efficiency)
 - Full COCO dataset: 37 minutes
 - Completed: November 20, 2025
 
-###[ ] **Phase 3**: GPU acceleration with CUDA
+###[x] Phase 3: GPU acceleration with CUDA ✓
+  - Performance: 155.07 images/sec (local SSD)
+  - Speedup: 4.23x vs CPU, 1.10x vs MPI cluster
+  - GPU: NVIDIA Tesla P100 (CuPy implementation)
+  - Processing time: 12.71 minutes for full dataset
+  - Completed: November 22, 2025
+
 ###[ ] **Phase 4**: Hybrid CPU+GPU pipeline
 ###[ ] **Phase 5**: Benchmarking and optimization
 
@@ -176,6 +182,46 @@ All code is developed as `.py` modules (not Jupyter notebooks) for:
 - Variance: <2% between nodes
 
 See detailed analysis: [Phase 2 Performance Report](docs/PHASE2_PERFORMANCE_REPORT.md)
+
+## Current Status: Phase 3 Complete
+
+### Phase 3 Results
+
+**GPU Acceleration Performance** (Tesla P100):
+
+**Configuration Testing**:
+- **3a. GPU + NFS/Powerline**: 77 img/sec (network bottleneck - 50 Mbps)
+- **3b. GPU + Local NVMe SSD**: 155.07 img/sec (I/O + transfer bottleneck)
+- **3c. GPU Pure Computation**: 458-915 img/sec (theoretical maximum)
+
+**Processing Time**: 12.71 minutes for 118,287 images
+
+**Bottleneck Analysis**:
+- Network (powerline): Limited to 77 img/sec (GPU 0% utilized)
+- Local SSD: Achieved 155.07 img/sec (GPU 20-53% utilized)
+- Pure GPU capability: 915 img/sec (when data pre-loaded in GPU memory)
+
+**Key Finding**: Real-world GPU performance (155 img/sec) achieves only 16.9% of theoretical GPU capability (915 img/sec), limited by:
+1. Sequential I/O processing (not batch processing)
+2. CPU↔GPU transfer overhead (~35% of time)
+3. JPEG decoding overhead (~30% of time)
+4. Small image sizes underutilize 3,584 CUDA cores
+
+**GPU Utilization**: 20-53% (I/O bound, not compute bound)
+
+See detailed analysis: [Phase 3 Performance Report](docs/PHASE3_PERFORMANCE_REPORT.md)
+
+### Comprehensive Performance Comparison
+
+| Phase | Configuration       | Throughput     | Speedup | Efficiency | Bottleneck         |
+|-------|---------------------|----------------|---------|------------|--------------------|
+| 1     | CPU single          | 36.63 img/sec  | 1.0x    | -          | CPU compute        |
+| 2     | MPI (5 nodes)       | 141.13 img/sec | 3.85x   | 77%        | NFS I/O contention |
+| 3a    | GPU + NFS/Powerline | 77 img/sec     | 2.10x   | -          | Network 50Mbps     |
+| 3b    | GPU + Local SSD     | 155.07 img/sec | 4.23x   | 16.9%      | I/O + transfers    |
+| 3c    | GPU pure            | 915 img/sec    | 25x     | -          | None (theoretical) |
+
+**Interesting Result**: GPU with local SSD (155 img/sec) is only 10% faster than 5-node MPI cluster (141 img/sec), showing that distributed CPU computing can compete with single GPU when I/O is the bottleneck.
 
 ## Future Enhancements
 
