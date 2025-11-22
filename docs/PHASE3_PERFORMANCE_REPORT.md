@@ -75,8 +75,8 @@ class GaussianBlurGPU:
 ### Test Configuration Matrix
 **I conducted benchmarks under different storage configurations to isolate bottlenecks:**
 
-| Test |Storage         | Network          | Description                   |
-|--- --|----------------|------------------|-------------------------------|
+| Test |Storage         |Network           |Description                    |
+|------|----------------|------------------|-------------------------------|
 | 3a   | NFS on HPC     | Powerline 50Mbps | Initial GPU test (baseline)   |
 | 3b   | Local NVMe SSD | N/A              | Eliminated network bottleneck |
 | 3c   | RAM (synthetic)| N/A              | Pure GPU capability test      |
